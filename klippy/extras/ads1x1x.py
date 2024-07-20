@@ -106,7 +106,7 @@ ADS101X_PGA_SCALAR = {
     0x0A00: 0.256 / 2047.0  # +/-0.256V range = Gain 16
 }
 ADS1X1X_MODE = {
-    'continous': 0x0000,  # Continuous conversion mode
+    'continuous': 0x0000,  # Continuous conversion mode
     'single': 0x0100  # Power-down single-shot mode
 }
 
