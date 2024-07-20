@@ -197,7 +197,7 @@ class ADS1X1X_chip:
         self.comp_polarity = ADS1X1X_COMPARATOR_POLARITY['ACTIVE_LO']
         self.comp_latching = ADS1X1X_COMPARATOR_LATCHING['NON_LATCHING']
         self.comp_queue = ADS1X1X_COMPARATOR_QUEUE['QUEUE_NONE']
-        self._i2c = bus.MCU_I2C_from_config(config, address)
+        self._i2c = bus.MCU_I2C_from_config(config, address, 400000)
 
         self.adc_voltage = config.getfloat('adc_voltage', 5., above=0.)
 
